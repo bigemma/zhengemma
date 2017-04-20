@@ -1,0 +1,52 @@
+.modify_text {
+	color: #0033CC;
+	font-size: 1em;
+}
+#event {
+	position: relative;
+	top: 0;
+}
+#login_location {
+	height: 30px;
+	float: right;
+	position: relative;
+	top: -20px;
+}
+.login {
+	font-family: Tahoma;
+}
+#loading {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+#logo {
+	float: left;
+	height: 30px;
+	font-size: 1.2em;
+	position: relative;
+	top: -20px;
+	color: green;
+}
+#accordion {
+	margin: 0 auto;
+	text-align: left;
+	clear: both;
+	z-index: -100;
+}
+input {
+	margin: 0 5px 5px 5px;
+	font-family: Tahoma;
+}
+.error {
+	color: red;
+	font-size: 0.7em;
+	font-weight: bold;
+	padding: 0 15px 0 0;
+}
+#holiday_text {
+	padding-top: 5px;
+	padding-left: 33px;
+	font-size: 0.8em;
+	color: #333;
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商智/公司會議</title>
+   <!-- PLUGINS CSS STYLE -->
+  <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="plugins/selectbox/select_option1.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel/dist/assets/owl.carousel.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="plugins/isotope/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="plugins/isotope/isotope.css">
+
+  <!--ICON--->
+  <link rel="shortcut icon" href="images/bi.ico" />
+  
+  <!--Main Style-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="options/animate.css">
+  <link rel="stylesheet" href="options/optionswitch.css">
+  <link rel="stylesheet" href="options/default.css">
+  <!--calendar-->
+  <link rel="stylesheet" href="css/fullcalendar.min.css">
+  <link rel="stylesheet" href="css/fullcalendar.print.min.css" media="print">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-datetimepicker.css">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="body-wrapper">
+ 
+  <div class="main-wrapper">
+    <!-- HEADER -->
+    <header id="pageTop" class="header-wrapper">
+       <!-- TOP INFO BAR -->
+      <div class="top-info-bar bg-color-1 hidden-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9">
+              
+            </div>
+            <div class="col-sm-3">
+              <ul class="list-inline functionList pull-right">
+                <li><i class="fa fa-user bg-color-4" aria-hidden="true"></i></li>
+                <li class="LanguageList">EmmaZheng</li>
+                <li class="cart-dropdown">
+                  <a href="login.html" class="bg-color-6 shop-cart" >
+                    <i class="fa fa-sign-out " aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- NAVBAR -->
+      <nav id="menuBar" class="navbar navbar-default lightHeader" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+           <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="商智資訊"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active dropdown singleDrop color-1">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-home bg-color-1" aria-hidden="true"></i> <span>人事行政</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="meeting.html">公司會議</a></li>
+                  <li><a href="news.html">公佈事項</a></li>
+                  <li><a href="contact.html">公司通訊錄</a></li>
+                  <li><a href="faq.html">常見問題</a></li>
+                </ul>
+              </li>
+              <li class="dropdown singleDrop color-3">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gamepad bg-color-3" aria-hidden="true"></i> <span>福委會(建置中)</span></a>
+              </li>
+              <li class=" dropdown singleDrop color-2">
+                <a href="booking.html">
+                  <i class="fa fa-calendar bg-color-2" aria-hidden="true"></i> 
+                  <span>會議室預訂</span>
+                </a>
+              </li>
+              <li class="dropdown singleDrop color-4">
+                <a href="class.html">
+                  <i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i> 
+                  <span>教育訓練</span>
+                </a>
+              </li>
+              <li class="dropdown singleDrop color-5">
+                <a href="download.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-files-o bg-color-5" aria-hidden="true"></i> 
+                  <span>檔案下載區</span>
+                </a>
+              </li>
+              <li class="dropdown singleDrop color-6">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gg bg-color-6" aria-hidden="true"></i> <span>外部連結</span></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="http://redmine.softbi.com/login" target="_blank">Redmine</a></li>
+                  <li><a href="http://timesheet.bi.com.tw/login.do" target="_blank">TimeSheet</a></li>
+                  <li><a href="http://www.bi.com.tw/webmail/" target="_blank">WebMail </a></li>
+                  <li><a href="https://dn1361-portal.aoacloud.com.tw/desk_auth_index.php" target="_blank">震旦雲</a></li>
+                  <li><a href="http://ticket.taiwantaxi.com.tw/ETicketWeb/LoginPage.aspx" target="_blank">台灣大車隊</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    <!-- PAGE TITLE SECTION-->
+    <section class="pageTitleSection">
+      <div class="container">
+        <div class="pageTitleInfo">
+          <h2>會議室預訂</h2>
+          <ol class="breadcrumb">
+            <li><a href="index.html">首頁</a></li>
+            <li class="active">會議室預訂</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    
+    
+
+     <!-- MAIN SECTION -->
+    <section class="mainContent full-width clearfix">
+      <div class="container">
+       <div class="row">
+           <div class="col-xs-12 block">
+           <a data-toggle="modal" href=".quick-view"><button type="submit" class="btn btn-primary" style="float:right;">預約會議室</button></a>
+</div>
+       </div><br>
+        <div class="row">
+          <div class="col-xs-12 block">
+            <div class="thumbnail thumbnailContent">
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-2">
+      <!-- COLOR BAR -->
+      <div class="container-fluid color-bar clearfix">
+        <div class="row">
+          <div class="col-sm-1 col-xs-2 bg-color-1">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-2">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-3">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-4">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-5">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-6">fix bar</div>
+          <div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-4 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-5 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-6 hidden-xs">fix bar</div>
+        </div>
+      </div>
+      <!-- COPY RIGHT -->
+      <div class="copyRight clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-push-7 col-xs-12"></div>
+            <div class="col-sm-7 col-sm-pull-5 col-xs-12">
+              <div class="copyRightText">
+                <p>© 2016 Copyright </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="scrolling">
+    <a href="#pageTop" class="backToTop hidden-xs" id="backToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
+  <!-- Booking Form Modal-->
+  <div class="modal fade quick-view" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title"><span class="glyphicon glyphicon-pencil btnicon" aria-hidden="true"></span>請詳細填寫以下資料，方便我們迅速處理您的需求，謝謝。</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-horizontal" >
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbPlace">預約會議室：</label>
+                    <div class="col-md-6">
+                        <div class="dropGeneral border-color-3">
+              <select name="guiest_id12" id="guiest_id12" class="select-drop" style="margin:0px;">
+                <option value="0">大會議室</option>
+                <option value="1">休息室</option>          
+              </select>
+            </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbEventDate">開始時間：</label>
+                    <div class="col-sm-6">
+                        <div class="input-group date" id="datetimepicker1">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="chkPeriod">結束時間：</label>
+                    <div class="col-sm-6">
+                       <div class="input-group date" id="datetimepicker11">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="chkPeriod">主旨：</label>
+                    <div class="col-sm-9">
+                       <div class="input-group ">
+                            <input id="tbContact" type="text" class="form-control form-inp" data-name="contact" placeholder="會議主旨" maxlength="30" name="contact"/>
+                            <span class="input-group-addon">必填</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbContact">與會人員：</label>
+                    <div class="col-sm-9">
+                        <div class="input-group ">
+                            <input id="tbContact" type="text" class="form-control form-inp" data-name="contact" placeholder="參加會議人員" maxlength="30" name="contact"/>
+                            <span class="input-group-addon">必填</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbNote">備註：</label>
+                    <div class="col-md-9">
+                        <textarea id="tbNote" class="form-control form-inp" data-name="note" placeholder="備註" maxlength="250" rows="5" style="resize:vertical" ></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="float:left;padding-left:40px;padding-right:40px">取消</button>
+            <button id="btnSave" type="button" class="btn btn-primary" style="padding-left:40px;padding-right:40px">送出
+            </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- Booking Content Modal-->
+  <div id="fullCalModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
+                    <h4 id="modalTitle" class="modal-title"></h4>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    
+            <div class="form-horizontal" >
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbPlace">預約會議室：</label>
+                    <label class="col-md-6">大會議室</label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbEventDate">開始時間：</label>
+                    <label class="col-md-6">04/13/2017 10:30 AM</label>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="chkPeriod">結束時間：</label>
+                    <label class="col-md-6">04/13/2017 12:30 AM</label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="chkPeriod">主旨：</label>
+                    <label class="col-md-9">兆豐行動理專會議</label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbContact">與會人員：</label>
+                    <label class="col-md-9">
+                        <a href="javascript:void(0)">vivian</a>
+                        <a href="javascript:void(0)">elsa</a>
+                        <a href="javascript:void(0)">jerry</a>
+                        <a href="javascript:void(0)">max</a>
+                        <a href="javascript:void(0)">emma</a>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="tbNote">備註：</label>
+                    <div class="col-md-9">
+                        <textarea disabled id="tbNote" class="form-control form-inp" data-name="note" placeholder="進行XXXXX會議" maxlength="250" rows="5" style="resize:vertical"></textarea>
+                    </div>
+                </div>
+            </div>
+                </div>
+                <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="float:left;padding-left:40px;padding-right:40px">關閉</button>
+            <button id="btnSave" type="button" class="btn btn-primary" style="padding-left:40px;padding-right:40px">刪除
+            </button>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!--JS-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="plugins/jquery-ui/jquery-ui.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+  <script src="plugins/OwlCarousel/dist/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/isotope/isotope.min.js"></script>
+  <script src="plugins/isotope/jquery.fancybox.pack.js"></script>
+  <script src="plugins/isotope/isotope-triger.js"></script>
+  <script src="plugins/countdown/jquery.syotimer.js"></script>
+  <script src="plugins/velocity/velocity.min.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.js"></script>
+  <script src="options/optionswitcher.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap-datetimepicker.js"></script>
+  <script src="js/fullcalendar.min.js"></script>
+  <script>
+      function getCookie(name) {
+		var value = "; " + document.cookie;
+		var parts = value.split("; " + name + "=");
+		if (parts.length == 2) return parts.pop().split(";").shift();
+	}
+	
+	var holiday = ["2016-01-01","2016-02-08","2016-02-09","2016-02-10","2016-03-25","2016-03-26","2016-03-28","2016-04-04","2016-05-02","2016-05-14","2016-06-09","2016-07-01","2016-09-16","2016-10-01","2016-10-10","2016-12-26","2016-12-27","2017-01-02","2017-01-28","2017-01-30","2017-01-31","2017-04-04","2017-04-14","2017-04-15","2017-04-17","2017-05-01","2017-05-03","2017-05-30","2017-07-01","2017-10-02","2017-10-05","2017-10-28","2017-12-25","2017-12-26"];
+var event = ["\u4e00\u6708\u4e00\u65e5","\u8fb2\u66c6\u5e74\u521d\u4e00","\u8fb2\u66c6\u5e74\u521d\u4e8c","\u8fb2\u66c6\u5e74\u521d\u4e09","\u8036\u7a4c\u53d7\u96e3\u7bc0","\u8036\u7a4c\u53d7\u96e3\u7bc0\u7fcc\u65e5","\u5fa9\u6d3b\u7bc0\u661f\u671f\u4e00","\u6e05\u660e\u7bc0","\u52de\u52d5\u7bc0\u7fcc\u65e5","\u4f5b\u8a95","\u7aef\u5348\u7bc0","\u9999\u6e2f\u7279\u5225\u884c\u653f\u5340\u6210\u7acb\u7d00..","\u4e2d\u79cb\u7bc0\u7fcc\u65e5","\u570b\u6176\u65e5","\u91cd\u967d\u7bc0\u7fcc\u65e5","\u8056\u8a95\u7bc0\u5f8c\u7b2c\u4e00\u500b\u5468\u65e5","\u8056\u8a95\u7bc0\u5f8c\u7b2c\u4e8c\u500b\u5468\u65e5","\u4e00\u6708\u4e00\u65e5\u7fcc\u65e5","\u8fb2\u66c6\u5e74\u521d\u4e00","\u8fb2\u66c6\u5e74\u521d\u4e09","\u8fb2\u66c6\u5e74\u521d\u56db","\u6e05\u660e\u7bc0","\u8036\u7a4c\u53d7\u96e3\u7bc0","\u8036\u7a4c\u53d7\u96e3\u7bc0\u7fcc\u65e5","\u5fa9\u6d3b\u7bc0\u661f\u671f\u4e00","\u52de\u52d5\u7bc0","\u4f5b\u8a95","\u7aef\u5348\u7bc0","\u9999\u6e2f\u7279\u5225\u884c\u653f\u5340\u6210\u7acb\u7d00..","\u570b\u6176\u65e5\u7fcc\u65e5","\u4e2d\u79cb\u7bc0\u7fcc\u65e5","\u91cd\u967d\u7bc0","\u8056\u8a95\u7bc0","\u8056\u8a95\u7bc0\u5f8c\u7b2c\u4e00\u500b\u5468\u65e5"];
+	
+    $(document).ready(function() {
+        
+		$('#calendar').fullCalendar({
+             monthNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
+        monthNamesShort: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
+            dayNames: ['星期一','星期二','星期三','星期四','星期五','星期六','星期日'],
+        dayNamesShort: ['星期一','星期二','星期三','星期四','星期五','星期六','星期日'],
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay,listWeek'
+			},
+            eventClick:  function(event, jsEvent, view) {
+                    $('#modalTitle').html(event.title);
+                    $('#modalBody').html(event.description);
+                    $('#eventUrl').attr('href',event.url);
+                    $('#fullCalModal').modal();
+                    return false;
+                },
+            dayRender: function (date, cell) {
+				var x = moment(date).format("YYYY-MM-DD");
+				var count = holiday.indexOf(x)
+				if (count != -1) { 
+					cell.css("background-color", "#FFBBBB");
+					cell.html("<div id='holiday_text'>" + event[count] + "</div>");
+				}
+			},
+			defaultDate: '2017-04-12',
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: '兆豐行動理專會議',
+					start: '2017-04-12T10:30:00',
+					end: '2017-04-12T12:30:00',
+                    color: '#84bed6',
+                    url:'.quick-view'
+				},
+				{
+					title: 'SA例會',
+					start: '2017-04-12T14:30:00',
+                    color: '#ea77ad'
+				}
+			]
+		});
+		
+	});
+
+</script>
+<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker11').datetimepicker();
+            });
+        </script>
+
+
+
+</body>
+</html>
